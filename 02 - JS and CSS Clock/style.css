@@ -16,8 +16,8 @@ body {
 }
 .clock {
   background: transparent;
-  height: 50vmin;
-  width: 50vmin;
+  height: 80vmin;
+  width: 80vmin;
   border: 1vmin solid lightsalmon;
   border-radius: 100%;
   display: grid;
@@ -34,28 +34,28 @@ body {
   transition: transform cubic-bezier(0.1, 2.7, 0.58, 1) .1s;
 }
 .hours {
-  height: 15vmin;
+  height: 25vmin;
   width: 3vmin;
   background: linear-gradient(lightsalmon, salmon);
   z-index: 1;
 }
 .minutes {
-  height: 20vmin;
+  height: 30vmin;
   width: 1vmin;
   background: linear-gradient(lightsalmon, salmon);
   z-index: 2;
 }
 .seconds {
-  height: 24vmin;
+  height: 35vmin;
   width: .5vmin;
   background: linear-gradient(lightsalmon, salmon);
   z-index: 3;
 }
 .clock_center {
   background: salmon;
-  height: 4vmin;
-  width: 4vmin;
-  border-radius: 4vmin;
+  height: 3vmin;
+  width: 3vmin;
+  border-radius: 3vmin;
   position: absolute;
   z-index: 4;
 }
