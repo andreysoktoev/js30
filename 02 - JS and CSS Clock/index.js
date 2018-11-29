@@ -7,7 +7,7 @@ function setDate() {
   const now = new Date();
   const secondsDegree = now.getSeconds() / 60 * 360;
   const minutesDegree = now.getMinutes() / 60 * 360;
-  const hoursDegree = now.getHours() / 24 * 360;
+  const hoursDegree = now.getHours() / 12 * 360;
   document.querySelector('.seconds').style.transform = `rotate(${secondsDegree}deg)`;
   document.querySelector('.minutes').style.transform = `rotate(${minutesDegree}deg)`;  
   document.querySelector('.hours').style.transform = `rotate(${hoursDegree}deg)`;
