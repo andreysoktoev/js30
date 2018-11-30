@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+  <link rel='stylesheet' type='text/css' href='style.css'>
+  <title>CSS Variables</title>
+</head>
+
+<body>
+  <img id='bg_img' src='https://images.unsplash.com/photo-1506700460003-dddfca73c2e5'>
+  <div class='ctrl_panel'>
+    <label>
+      Blur
+      <input
+        name='--blur'
+        class='slider'
+        type='range'
+        min='0'
+        max='10'
+        value='0'
+        data-suffix='px'
+        oninput='handleChange(name, value, dataset.suffix)'
+      >
+    </label>
+    <label>
+      Grayscale
+      <input
+        name='--grayscale'
+        class='slider'
+        type='range'
+        min='0'
+        max='100'
+        value='0'        
+        data-suffix='%'
+        oninput='handleChange(name, value, dataset.suffix)'
+      >
+    </label>
+  </div>
+  <script src='index.js'></script>
+</body>
+
+</html>
