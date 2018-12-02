@@ -1,0 +1,56 @@
+:root {
+  --border: 1px solid gainsboro;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body {
+  margin: 0;
+}
+nav {
+  padding: 0 20px;
+  background: white;
+  border-bottom: var(--border);
+}
+.navbar {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.navbar li {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: relative;
+}
+.navbar_item {
+  height: 40px;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  border-right: var(--border);
+}
+.dropdown_item {
+  border: var(--border);
+  display: none;
+  opacity: 0;
+  flex-direction: column;
+  position: absolute;
+  top: 40px;
+  background: white;
+  line-height: 2rem;
+  padding: 20px;
+  transition: 1s;
+}
+nav a {
+  text-decoration: none;
+  color: inherit;
+}
+main {
+  max-width: 768px;
+  margin: auto;
+}
+section {
+  padding: 20px;
+}
