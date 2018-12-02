@@ -26,18 +26,20 @@ const dropdown = document.querySelectorAll('.dropdown_item');
 navbar.forEach(i => {
   i.onmouseover = () => {
     i.lastElementChild.style.display = 'flex';
-    setTimeout( () => {
+    setTimeout(() => {
       i.lastElementChild.style.opacity = '1';
-      }, 100
+    }, 100
     );
+    document.getElementById('main').style.filter = 'blur(5px)';
   }
 })
 navbar.forEach(i => {
   i.onmouseout = () => {
     i.lastElementChild.style.opacity = '0';
-    setTimeout( () => {
+    setTimeout(() => {
       i.lastElementChild.style.display = 'none';
-      }, 100
+    }, 100
     );
+    document.getElementById('main').style.filter = '';
   }
 })
